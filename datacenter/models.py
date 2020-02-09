@@ -38,3 +38,12 @@ def get_duration(visit):
 def format_duration(duration):
     time_string = str(duration).split(".")[0]
     return time_string
+
+
+def is_visit_long(visit, minutes=1000):
+    delta = visit.leaved_at - visit.entered_at
+    visit_min = delta.seconds / 60
+    if visit_min > minutes:
+        return False
+    else:
+        return True

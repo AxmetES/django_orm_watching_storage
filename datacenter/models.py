@@ -42,8 +42,5 @@ def format_duration(duration):
 
 def is_visit_long(visit, minutes=1000):
     delta = visit.leaved_at - visit.entered_at
-    visit_min = delta.seconds / 60
-    if visit_min > minutes:
-        return False
-    else:
-        return True
+    visit_min = delta.total_seconds() / 60
+    return not visit_min < minutes

@@ -11,7 +11,7 @@ Set up project/settings.py file.
 ## Running
 
 ```python
-python main.py
+python manage.py sunserver 0.0.0.0:8000
 ```
 
 ## License

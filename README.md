@@ -6,7 +6,18 @@ it in web browser.
 
 ## Getting Started
 
-Set up project/settings.py file.
+Set up project/settings.py file, fill in the file with your data.
+
+```python
+DB_PASSWORD=  'database password'
+DB_USER=  'database user'
+DB_NAME= 'database name'
+DB_PORT= 'port'
+DB_HOST= 'database host'
+DB_ENGINE= 'database engine'
+SECRET_KEY= 'secret key to generate hashes'
+DEBUG=false
+```
 
 ## Running
 
